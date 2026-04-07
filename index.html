@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>📝 Todo App</title>
+    <!-- CSS file link -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <h1><i class="fas fa-check-circle"></i> Todo</h1>
+        
+        <div class="input-group">
+            <input type="text" id="todoInput" placeholder="Add a new task..." autocomplete="off">
+            <button onclick="addTodo()">
+                <i class="fas fa-plus"></i>
+            </button>
+        </div>
+
+        <div class="stats">
+            <div>Total: <span id="totalCount">0</span></div>
+            <div>Done: <span id="doneCount">0</span></div>
+            <div>Left: <span id="leftCount">0</span></div>
+        </div>
+
+        <ul id="todoList"></ul>
+
+        <div class="footer">
+            <button onclick="clearCompleted()" class="clear-btn">
+                <i class="fas fa-trash"></i> Clear Completed
+            </button>
+        </div>
+    </div>
+
+    <!-- JavaScript file link -->
+    <script src="script.js"></script>
+</body>
+</html>
